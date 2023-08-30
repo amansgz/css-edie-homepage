@@ -47,8 +47,8 @@
   </header>
 
   <main>
-    <section class= "section-hero">
-      <div><!-- container -->
+    <section class= "section-hero" id= "hero">
+      <div>
         <div class= "hero__wrapper">
           <p class= "hero__subheading">
             Unhappy with your website?
@@ -91,7 +91,7 @@
       </div>
     </section>
 
-    <section class= "section-services">
+    <section class= "section-services" id= "services">
       <div><!-- container -->
         <h2 class= "services__title">
           We offer high <br/>
@@ -146,8 +146,8 @@
       </div>
     </section>
 
-    <section class= "section-works">
-      <div><!-- container -->
+    <section class= "section-works" id= "works">
+      <div>
         <h2 class= "works__title">
           Good design means <br/>
           good business
@@ -200,21 +200,19 @@
             <h2 class= "project__title">
               Juice produt homepage
             </h2>
-
-            <a href= "#" class= "works__link">
-              see more
-              <figure class= "works__arrow">
-                <img src= "./assets/arrow_forward.svg" alt="">
-              </figure>
-            </a>
           </div>
-        </div>  
-
+        </div>
         
+        <a href= "#" class= "works__link">
+          see more
+          <figure class= "works__arrow">
+            <img src= "./assets/arrow_forward.svg" alt="">
+          </figure>
+        </a>
       </div>
     </section>
 
-    <section class="section-team">
+    <section class="section-team"id= "clients">
       <div class= "team__container">
         <div class= "team__content">
           <p class= "team__subheading">
@@ -234,7 +232,7 @@
           <picture>
             <img src= "./assets/person1.png" alt= "">
           </picture>
-          
+         
           <picture>
             <img src= "./assets/person2.png" alt= "">
           </picture>
@@ -267,32 +265,32 @@
 
   </main>
 
-  <footer class= "footer">
+  <footer class= "footer" id= "contact">
     <div class= "footer__grid">
       <ul class= "footer__nav">
         <li>
-          <a href="">Home</a>
+          <a href="#hero">Home</a>
         </li>
         <li>
-          <a href="">Services</a>
+          <a href="#services">Services</a>
         </li>
         <li>
-          <a href="">Our works</a>
+          <a href="#works">Our works</a>
         </li>
         <li>
-          <a href="">Clients</a>
+          <a href="#clients">Clients</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
 
-      <div>
+      <div class= "footer__social">
         <span class="logo footer__logo">
           Edie
         </span>
 
-        <ul class= "footer__social">
+        <ul class= "footer__social__links">
           <li>
             <a href="#">
               <figure class= "footer__social__icon">
@@ -327,7 +325,7 @@
             type= "email" 
             name= "email"
             id= "email"
-            placeholder= "email">
+            placeholder= "Email">
           <input class= "input__join"
             type="submit" 
             value="Join">
