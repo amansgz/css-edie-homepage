@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- SCRIPTS -->
+  <script src= "./js/index.js" defer></script>
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Edie Homepage | Devchallenges</title>
+</head>
+<body>
+  <header class= "header">
+    <nav class= "nav">
+      <div class= "nav__bar">
+        <span class= "logo">
+          Edie
+        </span>
+        <figure class= "hamburger">
+          <img src= "./assets/menu.svg" alt= "">
+        </figure>
+      </div>
+      <ul class= "nav__menu">
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Services</a>
+        </li>
+        <li>
+          <a href="">Our works</a>
+        </li>
+        <li>
+          <a href="">Clients</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+    </nav>  
+  </header>
+
+  <main>
+    <section class= "section-hero">
+      <div><!-- container -->
+        <p class= "hero__subheading">
+          Unhappy with your website?
+        </p>
+        <h1 class= "hero__title">
+          We create beautiful <br/>
+          and fast web services
+        </h1>
+
+        <div><!-- card -->
+          <picture class= "hero__image">
+            <img src= "./assets/heroImage.jpg" alt= "">
+          </picture>
+
+          <h2 class= "hero__subtitle">
+            Story, emotion <br/>
+            and purpose
+          </h2>
+          <p class= "hero__text">
+            We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.
+          </p>
+
+          <form class= "form">
+            <h3 class= "form__title">
+              Want us to contact you?
+            </h3>
+            <div class= "input__container">
+              <label for= "email"></label>
+              <input class= "input__email"
+                type= "email" 
+                name= "email"
+                id= "email"
+                placeholder= "Email">
+              <input class= "input__join"
+                type="submit" 
+                value="Join">
+            </div>    
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class= "section-services">
+      <div><!-- container -->
+        <h2 class= "services__title">
+          We offer high <br/>
+          demand services  
+        </h2>
+        <div class= "cards__container">
+          <div class= "card">
+            <figure class= "card__icon">
+              <img src= "./assets/edit.svg" alt="">
+            </figure>
+            <h2 class= "card__title">
+              UI/UX Design
+            </h2>
+            <p class= "card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class= "card__button">
+              Get started
+            </button>
+          </div>
+
+          <div class= "card">
+            <figure class= "card__icon">
+              <img src= "./assets/code.svg" alt="">
+            </figure>
+            <h2 class= "card__title">
+              Front End
+            </h2>
+            <p class= "card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class= "card__button">
+              Get started
+            </button>
+          </div>
+
+          <div class= "card">
+            <figure class= "card__icon">
+              <img src= "./assets/list.svg" alt="">
+            </figure>
+            <h2 class= "card__title">
+              Back End
+            </h2>
+            <p class= "card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class= "card__button">
+              Get started
+            </button>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+    <section class= "section-works">
+      <div><!-- container -->
+        <h2 class= "works__title">
+          Good design means <br/>
+          good business
+        </h2>
+
+        <div class= "projects__container">
+          <div class= "project">
+            <picture class= "project__image">
+              <img src= "./assets/smarthome.jpg" alt= "">
+            </picture>
+            <p class= "project__detail">
+              Full stack application
+            </p>
+            <h2 class= "project__title">
+              Smart home dashboard
+            </h2>
+          </div>
+
+          <div class= "project">
+            <picture class= "project__image">
+              <img src= "./assets/onboard.png" alt= "">
+            </picture>
+            <p class= "project__detail">
+              ux/ui design 
+            </p>
+            <h2 class= "project__title">
+              Onboard application
+            </h2>
+          </div>
+      
+          <div class= "project">
+            <picture class= "project__image">
+              <img src= "./assets/booking.png" alt= "">
+            </picture>
+            <p class= "project__detail">
+              Mobile application
+            </p>
+            <h2 class= "project__title">
+              Booking system
+            </h2>
+          </div>
+
+          <div class= "project">
+            <picture class= "project__image">
+              <img src= "./assets/juice-product.png" alt= "">
+            </picture>
+            <p class= "project__detail">
+              Front end application
+            </p>
+            <h2 class= "project__title">
+              Juice produt homepage
+            </h2>
+
+            <a href= "#" class= "works__link">
+              see more
+              <figure class= "works__arrow">
+                <img src= "./assets/arrow_forward.svg" alt="">
+              </figure>
+            </a>
+          </div>
+        </div>  
+
+        
+      </div>
+    </section>
+
+    <section class="section-team">
+      <div class= "team__container">
+        <div class= "team__content">
+          <p class= "team__subheading">
+            Meet the team
+          </p>
+          <h2 class= "team__title">
+            We are chilled <br/>
+            and a laidback <br/>
+            team
+          </h2>
+          <p class= "team__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>  
+
+        <div class= "team__photos">
+          <picture>
+            <img src= "./assets/person1.png" alt= "">
+          </picture>
+          
+          <picture>
+            <img src= "./assets/person2.png" alt= "">
+          </picture>
+          
+          <picture>
+            <img src= "./assets/person3.png" alt= "">
+          </picture>
+        </div><!-- end of photos -->
+
+        <article class= "testimonial">
+          <blockquote class= "client__quote">
+            <p>
+              “Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented team.”    
+            </p>  
+          </blockquote>
+          <div class= "client__grid">
+            <picture class= "client__photo">
+              <img src= "./assets/person4.png" alt= "">
+            </picture>
+            <span class= "client__name">
+              Carlos Tran
+            </span>
+            <span class= "client__company">
+              The Decorate Gatsby
+            </span>
+          </div>  
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class= "footer">
+    <div class= "footer__grid">
+      <ul class= "footer__nav">
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Services</a>
+        </li>
+        <li>
+          <a href="">Our works</a>
+        </li>
+        <li>
+          <a href="">Clients</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+
+      <div>
+        <span class="logo footer__logo">
+          Edie
+        </span>
+
+        <ul class= "footer__social">
+          <li>
+            <a href="#">
+              <figure class= "footer__social__icon">
+                <img src= "./assets/instagram.svg" alt="">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure class= "footer__social__icon">
+                <img src= "./assets/linkedin.svg" alt="">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure class= "footer__social__icon">
+                <img src= "./assets/twitter.svg" alt="">
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form class= "form">
+        <h3 class= "form__title">
+          Want us to contact you?
+        </h3>
+        <label for= "email"></label>
+        <input class= "input__email"
+          type= "email" 
+          name= "email"
+          id= "email"
+          placeholder= "email">
+        <input class= "input__join"
+          type="submit" 
+          value="Join">
+      </form>
+
+      <small class= "footer__attribution">
+        created by @amansgz - devChallenges.io
+      </small>
+    </div>  
+  </footer>
+</body>
+</html>
