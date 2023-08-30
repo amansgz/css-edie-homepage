@@ -469,13 +469,20 @@ section {
 .footer .form {
   margin-bottom: 7rem;
 }
+.footer .form .input__email {
+  width: 300px;
+}
+.footer .form .input__join {
+  left: 290px;
+}
 .footer__attribution {
+  display: flex;
+  justify-content: center;
   font-family: var(--ff-secondary);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--clr-white);
   line-height: 1.7rem;
-  text-align: center;
 }
 /********************************
   MEDIA QUERIES
@@ -515,10 +522,10 @@ section {
   .form__title {
     margin-bottom: .9rem;
   }
-  .input__email {
+  .input__container .input__email {
     width: 270px;
   }
-  .input__join {
+  .input__container .input__join {
     padding: .5em 1em;
   }
   /********************************
@@ -592,6 +599,9 @@ section {
   }
   .footer__social li {
     margin-right: .5rem;
+  }
+  .footer .form .input__join {
+    left: 240px;
   }
 }
 
