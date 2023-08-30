@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="devchallenges.png" />
+  <link rel="icon" href="./assets/devchallenges.png">
   <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/">
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <script src="https://kit.fontawesome.com/1fbae0c810.js" crossorigin="anonymous"></script>
   <!-- SCRIPTS -->
   <script src= "./js/index.js" defer></script>
   <!-- STYLES -->
@@ -22,25 +24,28 @@
         <span class= "logo">
           Edie
         </span>
-        <figure class= "hamburger">
+        <figure class= "hamburger" id= "icon-hamburger">
           <img src= "./assets/menu.svg" alt= "">
         </figure>
+        <figure class= "close hidden" id= "icon-close">
+          <img src= "./assets/close.svg" alt= "">
+        </figure>
       </div>
-      <ul class= "nav__menu">
+      <ul class= "nav__menu" id= "nav-menu">
         <li>
-          <a href="">Home</a>
+          <a href= "#">Home</a>
         </li>
         <li>
-          <a href="">Services</a>
+          <a href="#services">Services</a>
         </li>
         <li>
-          <a href="">Our works</a>
+          <a href="#works">Our works</a>
         </li>
         <li>
-          <a href="">Clients</a>
+          <a href="#clients">Clients</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>  
@@ -92,7 +97,7 @@
     </section>
 
     <section class= "section-services" id= "services">
-      <div><!-- container -->
+      <div>
         <h2 class= "services__title">
           We offer high <br/>
           demand services  
@@ -198,16 +203,14 @@
               Front end application
             </p>
             <h2 class= "project__title">
-              Juice produt homepage
+              Juice product homepage
             </h2>
           </div>
         </div>
         
         <a href= "#" class= "works__link">
           see more
-          <figure class= "works__arrow">
-            <img src= "./assets/arrow_forward.svg" alt="">
-          </figure>
+          <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
     </section>
@@ -292,24 +295,18 @@
 
         <ul class= "footer__social__links">
           <li>
-            <a href="#">
-              <figure class= "footer__social__icon">
-                <img src= "./assets/instagram.svg" alt="">
-              </figure>
+            <a href="#" class= "footer__social__icon">
+              <i class= "fa-brands fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <figure class= "footer__social__icon">
-                <img src= "./assets/linkedin.svg" alt="">
-              </figure>
+            <a href="#" class= "footer__social__icon">
+              <i class="fa-brands fa-linkedin"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <figure class= "footer__social__icon">
-                <img src= "./assets/twitter.svg" alt="">
-              </figure>
+            <a href="#" class= "footer__social__icon">
+              <i class= "fa-brands fa-twitter"></i>
             </a>
           </li>
         </ul>

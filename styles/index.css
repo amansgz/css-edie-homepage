@@ -4,9 +4,11 @@
   --clr-gray-2: #4F4F4F;
   --clr-gray-3: #828282;
   --clr-gray-4: #BDBDBD;
+  --clr-gray-5: #d8d3d3;
   --clr-gray-6: #F2F2F2;
   --clr-white: #FFF;
   --clr-light-blue: #2D9CDB;
+  --clr-dark-blue: #306c8f;
   --clr-green: #27AE60;
   --clr-red: #EB5757;
   --clr-background-body: #FFF;
@@ -57,6 +59,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 1.6rem;
@@ -94,6 +97,13 @@ section {
 /*********************************/
 .header {
   padding: var(--header-block-padding) var(--header-inline-padding);
+  background-color: var(--clr-white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav {
+  height: 5rem;
 }
 .nav__bar {
   display: flex;
@@ -107,11 +117,35 @@ section {
   color: var(--clr-gray-1);
   line-height: clamp(3.6rem, calc(3.6rem + ((1vw - 0.32rem) * 1.7208)), 5.4rem);
 }
-.hamburger {
+.hamburger,
+.close {
   width: 2.4rem;
 }
-.nav__menu {
+.hidden {
   display: none;
+}
+.show {
+  display: block;
+}
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	width: 100%;
+	padding: 2rem 0;
+	margin-top: 4rem;
+	background-color: var(--clr-white);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-150%);
+	z-index: 100;
+	transition: .5s ease;
+}
+.nav__menu__show {
+  transform: translateY(0);
+}
+.nav__menu li {
+  margin: 2rem 0;
 }
 .nav__menu li a {
   font-size: 2.4rem;
@@ -211,10 +245,9 @@ section {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 7.2rem;
+  transition: .1s ease;
 }
-.card:hover {
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
-}
+
 .card__icon {
   width: 50px;
   height: 50px;
@@ -245,14 +278,17 @@ section {
   width: 11.6rem;
   padding: .5em 0;
   font-size: 1.6rem;
-  background-color: var(--clr-gray-4);
+  background-color: var(--clr-gray-5);
   color: var(--clr-gray-1);
   line-height: 2.4rem;
   border: none;
   border-radius: 12px;
   transition: .1s ease;
 }
-.card__button:hover {
+.card:hover  {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.card:hover .card__button {
   background-color: var(--clr-light-blue);
   color: var(--clr-white);
   cursor: pointer;
@@ -285,6 +321,11 @@ section {
   font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.5736)), 2.4rem);
   color: var(--clr-gray-1);
   line-height: clamp(2.7rem, calc(2.7rem + ((1vw - 0.32rem) * 0.8604)), 3.6rem);
+  transition: .1s ease;
+}
+.project__title:hover {
+  color: var(--clr-light-blue);
+  cursor: pointer;
 }
 .works__link {
   display: flex;
@@ -293,9 +334,13 @@ section {
   font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.5736)), 2.4rem);
   color: var(--clr-light-blue);
   line-height: 27px; line-height: 36px;
+  transition: .1s ease;
 }
-.works__arrow {
+.works__link i {
   width: 2.4rem;
+}
+.works__link:hover {
+  color: var(--clr-dark-blue);
 }
 /********************************
   TEAM SECTION
@@ -414,9 +459,9 @@ section {
   margin-top: 1rem;
 }
 .footer__social__icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  font-size: 2.4rem;
   margin-right: .5em;
+  color: var(--clr-white);
 }
 .footer__social__icon:hover {
   color: var(--clr-light-blue);
@@ -439,7 +484,8 @@ section {
   /********************************
     HEADER - MQ
   /*********************************/
-  .hamburger {
+  .hamburger,
+  .close {
     display: none;
   }
   .nav {
@@ -448,7 +494,11 @@ section {
     align-items: center;
   }
   .nav__menu {
-    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: translateY(0);
+    margin: 0;
+    box-shadow: none;
   }
   .nav__menu li {
     margin: 1em;
@@ -464,6 +514,9 @@ section {
   }
   .form__title {
     margin-bottom: .9rem;
+  }
+  .input__email {
+    width: 270px;
   }
   .input__join {
     padding: .5em 1em;
