@@ -20,11 +20,14 @@
   </h3>
 </div>
 
-## The challenge
+## The challenge    
 
-- User story: I can see a page following the given design
-- User story: I can see a page on mobile following the given design
-- User story: I can go to certain locations by selecting links in navigation or footer
+Create a static page with HTML and CSS following the designs.   
+
+### User story
+- I can see a page following the given Figma design
+- I can see a page on mobile following the given design
+- I can go to certain locations by selecting links in navigation or footer
 
 
 ## Built With
