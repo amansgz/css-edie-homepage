@@ -20,8 +20,6 @@
   </h3>
 </div>
 
-![screenshot](./assets/preview.png)
-
 ## The challenge
 
 - User story: I can see a page following the given design
@@ -33,6 +31,8 @@
 
 - CSS
 
+## Preview 
+![screenshot](./assets/preview.png)
 
 ## Author
 
