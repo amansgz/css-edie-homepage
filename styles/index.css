@@ -64,6 +64,7 @@ html {
 body {
 	max-width: 1440px;
 	margin: auto;
+  padding-top: 5rem;
 	font-family: var(--ff-body);
   font-size: 1.6rem;
   font-weight: var(--font-weight-light-bold);
@@ -95,8 +96,10 @@ section {
 .header {
   padding: var(--header-block-padding) var(--header-inline-padding);
   background-color: var(--clr-white);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 200;
 }
 .nav {
@@ -501,11 +504,12 @@ section {
     flex-direction: row;
     justify-content: flex-end;
     transform: translateY(0);
+    padding: 0;
     margin: 0;
     box-shadow: none;
   }
   .nav__menu li {
-    margin: 1em;
+    margin: 1rem;
   }
   /********************************
     HERO SECTION - MQ
