@@ -21,13 +21,11 @@
 	--ff-body: var(--ff-primary);
   --ff-logo: 'Heebo', sans-serif;
 
-  --font-size-logo: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 1.1472)), 3.6rem);
   /* FONT SIZES */
 	--font-size-h1: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 2.2945)), 4.8rem);
 	--font-size-h2: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 2.2945)), 4.8rem);
-	--font-size-h3: ;
-	--font-size-text: ;
   --font-size-subheading: clamp(1.2rem, calc(1.2rem + ((1vw - 0.32rem) * 0.5736)), 1.8rem);
+  --font-size-logo: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 1.1472)), 3.6rem);
 
   /* FONT WEIGHTS */
 	--font-weight-light: 300;
@@ -61,14 +59,13 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-body {
-  font-size: 1.6rem;
-}
+
 /*General styling*/
 body {
 	max-width: 1440px;
 	margin: auto;
 	font-family: var(--ff-body);
+  font-size: 1.6rem;
   font-weight: var(--font-weight-light-bold);
 	background-color: var(--clr-background-body);
 }
@@ -100,7 +97,7 @@ section {
   background-color: var(--clr-white);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 200;
 }
 .nav {
   height: 5rem;
@@ -170,10 +167,10 @@ section {
   line-height: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.8604)), 2.7rem);
 }
 .hero__title {
+   margin-bottom: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 2.5813)), 4.2rem);
   font-size: var(--font-size-h1);
   color: var(--clr-gray-1);
   line-height: clamp(3.6rem, calc(3.6rem + ((1vw - 0.32rem) * 3.4417)), 7.2rem);
-  margin-bottom: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 2.5813)), 4.2rem);
 }
 .hero__image img {
   border-radius: 18px;
@@ -238,12 +235,12 @@ section {
   line-height: clamp(3.6rem, calc(3.6rem + ((1vw - 0.32rem) * 1.7208)), 5.4rem);
 }
 .card {
-  width: 34.1rem;
-  height: clamp(42.2rem, calc(42.2rem + ((1vw - 0.32rem) * 3.6138)), 45.98rem);
-  padding: 46px 33px 46px 33px; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 34.1rem;
+  height: clamp(42.2rem, calc(42.2rem + ((1vw - 0.32rem) * 3.6138)), 45.98rem);
+  padding: 46px 33px 46px 33px; 
   margin-bottom: 7.2rem;
   transition: .1s ease;
 }
