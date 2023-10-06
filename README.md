@@ -19,17 +19,9 @@ Create a static page with HTML and CSS following the Figma designs.
     <a href="https://amansgz.github.io/css-edie-homepage/">
       Demo
     </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/solutions/O1LWD4KhT4uwWM7bFKiF">
-      Solution
-    </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0">
-      Challenge
-    </a>
   </h3>
 </div>
 
 ![screenshot](./assets/preview.png)
 
-This application/site was created as a submission to <a href="https://devchallenges.io/paths/responsive-web-developer">Devchallenges</a> 
+This application/site was created as a submission to <a href="https://legacy.devchallenges.io/paths/responsive-web-developer">Legacy Devchallenges</a> 
