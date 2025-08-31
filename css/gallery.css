@@ -1,0 +1,39 @@
+/*****************/
+/* Team Section */
+/****************/
+.gallery {
+  margin: 1.5rem 0;
+}
+.gallery img {
+  border-radius: 12px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+}
+.gallery img:nth-child(1) {
+  width: 100%;
+  max-width: 15rem;
+}
+.gallery img:nth-child(2) {
+  width: 100%;
+  max-width: 18rem;
+}
+.gallery img:nth-child(3) {
+  width: 100%;
+  max-width: 20rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+.gallery img:nth-child(1) {
+  grid-column: 2 / 3;
+}
+.gallery img:nth-child(2) {
+  grid-column: 2 / 3;
+}
+.gallery img:nth-child(3) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  align-self: center;
+}
