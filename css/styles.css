@@ -1,0 +1,215 @@
+:root {
+  --clr-dark-gray: #333333;
+  --clr-gray: #4f4f4f;
+  --clr-light-gray: #828282;
+  --clr-very-light-gray: #bdbdbd;
+  --clr-light-blue: #2d9cdb;
+  --clr-dark-blue: #306c8f;
+  --clr-green: #27ae60;
+  --clr-red: #eb5757;
+  --clr-bg-footer: #100e1d;
+  --shadow-subtle: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+
+  --ff-primary: "Poppins", sans-serif;
+  --ff-secondary: "Montserrat", sans-serif;
+  --ff-logo: "Heebo", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/********************/
+/* General styling */
+/*******************/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding-top: 60px; /* for fixed header */
+  font-family: var(--ff-secondary);
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  color: var(--clr-dark-gray);
+  background-color: var(--clr-bg-body);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/***********/
+/* Layout */
+/**********/
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section,
+footer {
+  padding: 3rem 0;
+}
+/**************/
+/* Utilities */
+/*************/
+.section-heading {
+  font-family: var(--ff-primary);
+  font-size: clamp(1.5rem, 5vw + 0.5rem, 2.5rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.hero-section .section-heading {
+  width: 14ch;
+}
+.services-section .section-heading {
+  width: 15ch;
+}
+.works-section .section-heading {
+  width: 18ch;
+}
+.team-content .section-heading {
+  width: 14ch;
+}
+.subheading-blue {
+  color: var(--clr-light-blue);
+}
+.subheading-red {
+  color: var(--clr-red);
+}
+.logo {
+  font-family: var(--ff-logo);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.header-logo {
+  color: var(--clr-dark-gray);
+}
+.footer-logo {
+  color: #fff;
+}
+/*****************/
+/* Hero Section */
+/****************/
+.hero-content {
+  margin-left: 1rem;
+}
+.hero-section h1 {
+  width: 14ch;
+  font-family: var(--ff-primary);
+  font-size: clamp(2rem, 5vw + 1rem, 4rem);
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.hero-image {
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+.hero-description {
+  width: 28ch;
+  color: var(--clr-light-gray);
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+/******************/
+/* Works Section */
+/*****************/
+.see-more-container {
+  display: flex;
+  gap: 10px;
+  padding-top: 2rem;
+}
+.see-more-link {
+  color: var(--clr-dark-blue);
+  transition: 0.3s ease;
+}
+.arrow-right-icon {
+  width: 20px;
+  height: 20px;
+}
+.arrow-right-icon path {
+  fill: var(--clr-dark-blue);
+  transition: 0.3s ease;
+}
+.see-more-container:hover .see-more-link {
+  color: var(--clr-light-blue);
+  cursor: pointer;
+}
+.see-more-container:hover .arrow-right-icon path {
+  fill: var(--clr-light-blue);
+  cursor: pointer;
+}
+/*****************/
+/* Team Section */
+/****************/
+.team-content .subheading-red {
+  margin-bottom: 0.5rem;
+}
+.team-content p {
+  width: 23ch;
+}
+/***********/
+/* Footer */
+/**********/
+.footer {
+  background-color: var(--clr-bg-footer);
+}
+.logo-social-wrapper {
+  margin: 2rem 0;
+}
+.footer-attribution {
+  display: block;
+  text-align: center;
+  color: var(--clr-very-light-gray);
+  padding-top: 2rem;
+}
+/******************/
+/* Media Queries */
+/*****************/
+@media (min-width: 768px) {
+  .hero-content {
+    margin-left: 2.5rem;
+  }
+  .hero-description {
+    width: 42ch;
+  }
+  /* Team Section */
+  .content-gallery-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .see-more-container {
+    justify-content: flex-end;
+    padding-right: 1rem;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 1rem;
+  }
+  .logo-social-wrapper {
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-section h1 {
+    width: 19ch;
+  }
+}

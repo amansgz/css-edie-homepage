@@ -1,25 +1,18 @@
-const iconHamburger = document.getElementById('icon-hamburger');
-const iconClose = document.getElementById('icon-close');
-const navMenu = document.getElementById('nav-menu');
-const nav_Menu = document.querySelector('.nav__menu');
+const btnHamburger = document.getElementById("btnHamburger");
+const navMenu = document.getElementById("navMenu");
 
-iconHamburger.addEventListener('click', e => {
-  iconHamburger.classList.toggle('hidden');
-  iconClose.classList.add('show');
-  navMenu.classList.add('nav__menu__show');
+btnHamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+  btnHamburger.classList.toggle("open");
 });
 
-iconClose.addEventListener('click', () => {
-  iconHamburger.classList.toggle('hidden');
-  iconClose.classList.toggle('show');
-  navMenu.classList.remove('nav__menu__show');
-})
-
-
 document.addEventListener("click", (e) => {
-    if (!e.target.matches(".nav__menu a")) return false;
-
-    iconHamburger.classList.toggle('hidden');
-    iconClose.classList.toggle('show');
-    nav_Menu.classList.remove('nav__menu__show');
+  if (
+    !navMenu.contains(e.target) &&
+    !btnHamburger.contains(e.target) &&
+    navMenu.classList.contains("active")
+  ) {
+    navMenu.classList.remove("active");
+    btnHamburger.classList.remove("open");
+  }
 });
