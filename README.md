@@ -1,27 +1,57 @@
 # Edie Homepage
 
-## The challenge    
+This is my solution to the "Edie homepage" challenge on Devchallenges. The project is a responsive, multi-section landing page built from mobile-first approach.
 
-Create a static page with HTML and CSS following the Figma designs.   
+## Key Features
 
-## User story
-- I can see a page following the given design
-- I can see a page on mobile following the given design
-- I can go to certain locations by selecting links in navigation or footer
+- **Mobile-First Design:** The layout is fully responsive, prioritizing a seamless experience on mobile devices before scaling up to larger screens.
+- **Sticky Header:** A fixed header provides consistent navigation as the user scrolls through the page.
+- **Multi-Section Layout:** The page includes distinct sections for a hero area, services, a project showcase, and a footer.
+- **Modular CSS:** The styling is organized into separate files for each component (`form.css`, `cards.css`, `gallery.css`, `navigation.css`), promoting better maintainability and scalability.
+- **Modern Layout Techniques:**
+  - **CSS Grid:** Utilized for a photo gallery and a project showcase with a unique staggered alignment effect (acheved with a `translateY()` offset on specific columns).
+  - **Flexbox:** Used for flexible and dynamic element alignment, including the two different card layouts.
+- **CSS Variables:** Implemented to manage colors, fonts, and spacing, making it easier to maintain a consistent design and allowing for quick theming changes.
+- **Contact Form:** A functional email form is included in the footer, featuring custom styling for a sleek look.
 
+---
 
-## Built With
+## Links
 
-- CSS
+- **Live Site:** [Edie Homepage](https://amansgz.github.io/css-edie-homepage/)
 
-<div>
-  <h3>
-    <a href="https://amansgz.github.io/css-edie-homepage/">
-      Demo
-    </a>
-  </h3>
-</div>
+---
 
-![screenshot](./assets/preview.png)
+## Project Structure
 
-This application/site was created as a submission to <a href="https://legacy.devchallenges.io/paths/responsive-web-developer">Legacy Devchallenges</a> 
+The project is structured with a single `index.html` file and a modular CSS setup, which includes a main stylesheet.
+
+- `index.html`
+- `css/`
+  - `card.css`
+  - `form.css`
+  - `gallery.css`
+  - `navigation.css`
+  - `styles.css`
+
+---
+
+### Technologies Used
+
+- **HTML5** (Semantic elements)
+- **CSS#** (Flexbox, Grid, Custom Properties)
+
+---
+
+### How to Run
+
+1. Clone the repository:
+   `git clone`
+   `https://github.com/amansgz/css-edie-homepage.git`
+2. Open `index.html` in your browser.
+
+---
+
+### Contact
+
+Feel free to contact me with any feedback or questions!
